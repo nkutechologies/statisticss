@@ -77,12 +77,12 @@ body {
 .stats-text {
   font-weight: bold;
   color: aliceblue;
-  font-family: "Courier New", Courier, monospace;
   text-align: center;
   align-items: center;
   font-size: x-large;
   margin-top: 10px;
   color: white;
+  margin-bottom: 30px;
 }
 .boxes-container {
   display: flex;
@@ -138,26 +138,40 @@ body {
 #sub-box-heading {
   font-weight: bold;
   color: #45b6fe;
-  font-family: "Courier New", Courier, monospace;
   text-align: center;
   align-items: center;
-  font-size: small;
   margin-top: 10px;
 }
 .sub-box-text {
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  align-items: center;
+
   font-size: small;
 }
 
 #box-style {
-  background-image: linear-gradient(to top, #45b6fe, #0e2344);
+    background-image: linear-gradient(to top, #45b6fe, #0e2344);
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
 }
 
-#mySidenav2{
-    width: 95%;
+#panel1{
+    width: 45%;
     margin-bottom: 20px;
-    height: 350px;
+    height: 370px;
+    display: inline-block;
+}
+
+#panel2{
+    width: 45%;
+    margin-bottom: 20px;
+    height: 370px;
+    display: inline-block;
+}
+i{
+    color:#fff;
+    position: relative;
+    top:5px;
+    font-size: 20px;
 }
