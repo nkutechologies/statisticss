@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <div class="bg-color">
+    <div class="side-text">
+      <div style="font-weight: bold;align-items: center;font-size: x-large;">Statistics</div>
+      <div style="display: flex; justify-content: space-between;margin-top: 5px;">
+        <div class="stats-sub-heading">Running Time:</div>
+        <div class="stats-sub-text">10:00 Hours</div>
+      </div>
+      <div style="display: flex; justify-content: space-between;margin-top: 5px;">
+        <div class="stats-sub-heading">Energy Consumption:</div>
+        <div class="stats-sub-text">10 KWH</div>
+      </div>
+      <div style="display: flex; justify-content: space-between;margin-top: 5px;">
+        <div class="stats-sub-heading">Dummy Content</div>
+        <div class="stats-sub-text">Lorem Ipsum</div>
+      </div>
+    </div>
+    <model-viewer
+      alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+      class="obj" src="./Src/cylinder.glb" ar environment-image="./Src/poster.webp" poster="./Src/poster.webp"
+      shadow-intensity="1" camera-controls autoplay disable-tap>
+      <button id='newButton' class="Hotspot" slot="hotspot-1"
+        data-position="353.9284798513918m -0.2713800221610043m 119.05698448086659m"
+        data-normal="-0.6856342121586245m 0.0011472190254793416m 0.7279453351771203m"
+        data-visibility-attribute="visible"></button>
+      <button id='mm' class="Hotspot" slot="hotspot-2"
+        data-position="-305.1810531009079m -1.1732162344647818m 81.50369654429393m" data-normal="-1m 0m 0m"
+        data-visibility-attribute="visible"></button>
+    </model-viewer>
+    <div class="side-text">
+      <div style="font-weight: bold;align-items: center;font-size: x-large;">Statistics</div>
+      <div style="display: flex; justify-content: space-between;margin-top: 5px;">
+        <div class="stats-sub-heading-left">Running Time:</div>
+        <div class="stats-sub-text">10:00 Hours</div>
+      </div>
+      <div style="display: flex; justify-content: space-between;margin-top: 5px;">
+        <div class="stats-sub-heading-left">Energy Consumption:</div>
+        <div class="stats-sub-text">10 KWH</div>
+      </div>
+      <div style="display: flex; justify-content: space-between;margin-top: 5px;">
+        <div class="stats-sub-heading-left">Dummy Content</div>
+        <div class="stats-sub-text">Lorem Ipsum</div>
+      </div>
+    </div>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" id='hoverclose' class="closebtn" onclick="myFunc()">&times;</a>
+    <div class="stats-text">Statistics
+    </div>
+    <div class="container boxes-container">
+      <div class="box">
+        <div>
+          <p id="sub-box-heading">Todays trip</p>
+          <p class="sub-box-text">145 km</p>
+        </div>
+        <div id="box-style">daba</div>
+      </div>
+      <div class="box">
+        <div>
+          <p id="sub-box-heading">Todays trip</p>
+          <p class="sub-box-text">145 km</p>
+        </div>
+        <div id="box-style">daba</div>
+      </div>
+      <div class="box">
+        <div>
+          <p id="sub-box-heading">Todays trip</p>
+          <p class="sub-box-text">145 km</p>
+        </div>
+        <div id="box-style">daba</div>
+      </div>
+      <div class="box">
+        <div>
+          <p id="sub-box-heading">Todays trip</p>
+          <p class="sub-box-text">145 km</p>
+        </div>
+        <div id="box-style">daba</div>
+      </div>
+    </div>
+  </div>
+  <div id="mySidenav2" class="sidenav">
+    <a href="javascript:void(0)" id='hoverclose' class="closebtn" onclick="myFunc()">&times;</a>
+    <div class="stats-text">Statistics
+    </div>
+    <div class="container" >
+      <img src="./Src/image.png" alt="alt image">
+    </div>
+  </div>
+  <script>
+    function myFunc2() {
+      if(document.getElementById("mySidenav2").style.opacity == "0"){
+        document.getElementById("mySidenav2").style.opacity = "1";
+      }else{
+        document.getElementById("mySidenav2").style.opacity = "0";
+      }
+    }
+    const newButton = document.getElementById('newButton')
+    newButton.addEventListener("click", myFunc2);
+
+  </script>
+</body>
+
+</html>

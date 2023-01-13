@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-color {
+  margin: auto;
+  background-image: linear-gradient(to right, #45b6fe, #0e2344);
+  background-repeat: inherit;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 92%;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.Hotspot {
+  width: 15px;
+  height: 15px;
+  background: lightgray;
+  border-radius: 20px;
+  opacity: 0.5;
+  border-width: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.obj {
+  margin: auto;
+  height: 250px;
+  width: 500px;
+  /* position: absolute; */
+}
+.left-side {
+  display: inline-block;
+}
+.side-text {
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+#side1 {
+  display: inline-block;
+}
+.stats-sub-heading {
+  color: #0e2344;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.stats-sub-heading-left {
+  color: #45b6fe;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.stats-sub-text {
+  color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.sidenav {
+  height: 180px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-image: linear-gradient(to top, #45b6fe, #0e2344);
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.stats-text {
+  font-weight: bold;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  align-items: center;
+  font-size: x-large;
+  margin-top: 10px;
+  color: white;
+}
+.boxes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+}
+.box {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  flex: 1;
+  border-radius: 8px;
+}
+.dot {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.7),
+    0px 0px 5px 1px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sidenav a {
+  color: #818181;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  display: none;
+  position: absolute;
+  right: 40px;
+}
+
+#sidebarimages {
+  width: 370px;
+  height: 300px;
+  object-fit: contain;
+}
+
+#sub-box-heading {
+  font-weight: bold;
+  color: #45b6fe;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  align-items: center;
+  font-size: small;
+  margin-top: 10px;
+}
+.sub-box-text {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  align-items: center;
+  font-size: small;
+}
+
+#box-style {
+  background-image: linear-gradient(to top, #45b6fe, #0e2344);
+}
+
+#mySidenav2{
+    width: 95%;
+    margin-bottom: 20px;
+    height: 350px;
+}
